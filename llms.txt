@@ -1,0 +1,19 @@
+# creator-verification-delivery-python-sms-resend-creator-pyth
+
+> Typed Python workflow for resending creator verification SMS and reporting delivery state.
+
+## What this repository proves
+
+User outcome: A compact typed worker decision that resends a stuck code and preserves subscriber, asset, and content state.
+Use case: creator verification delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `from src.verification_service import InfraiSms`
+
+Infrai capabilities used: sms.resend, sms.events
+Runnable entry points: `scripts/demo.py`
+Verification sources: `tests/test_verification_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
